@@ -1,0 +1,25 @@
+{
+  "inputs": [
+    {
+      "name": "preimage",
+      "public": false,
+      "type": "array",
+      "components": {
+        "size": 4,
+        "type": "field"
+      }
+    },
+    {
+      "name": "expectedHash",
+      "public": true,
+      "type": "array",
+      "components": {
+        "size": 2,
+        "type": "field"
+      }
+    }
+  ],
+  "output": {
+    "type": "bool"
+  }
+}

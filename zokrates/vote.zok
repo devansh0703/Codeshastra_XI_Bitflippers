@@ -1,0 +1,11 @@
+// vote.zok
+import "hashes/sha256/512bitPacked" as sha256packed;
+
+// This circuit proves that the prover knows a preimage of 4 field elements 
+// that, when hashed, equals the public hash (2 field elements).
+def main(private field[4] preimage, field[2] expectedHash) -> bool {
+    field[2] computedHash = sha256packed(preimage);
+    // The circuit outputs true if the computed hash equals the expected hash.
+    return computedHash[0] == expectedHash[0] && computedHash[1] == expectedHash[1];
+}
+
