@@ -5,7 +5,7 @@ const path = require("path");
 const axios = require("axios");
 const FormData = require("form-data");
 
-const NFT_STORAGE_API_KEY = "ec4dbb68.f98ff872ebc348a98d7074663257ab31"; // Don't share this key publicly
+const NFT_STORAGE_API_KEY = "33ffab75.0d2b2557822840d791f797c209b4ffaa"; // Don't share this key publicly
 
 async function uploadToNFTStorage(filePath) {
   const fullPath = path.resolve(filePath);
